@@ -1,0 +1,18 @@
+{
+  "env": {
+    "PATH": "C:\\Program Files\\nodejs;%PATH%"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Grep",
+        "hooks": [
+          {
+             "type": "command",
+            "command": "node ./hooks/read_hook.js"
+          }
+        ]
+      }
+    ]
+  }
+}
