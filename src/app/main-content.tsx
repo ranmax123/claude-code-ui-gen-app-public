@@ -14,6 +14,7 @@ import { CodeEditor } from "@/components/editor/CodeEditor";
 import { PreviewFrame } from "@/components/preview/PreviewFrame";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HeaderActions } from "@/components/HeaderActions";
+import { DownloadButton } from "@/components/DownloadButton";
 
 interface MainContentProps {
   user?: {
@@ -71,7 +72,10 @@ export function MainContent({ user, project }: MainContentProps) {
                       <TabsTrigger value="code" className="data-[state=active]:bg-white data-[state=active]:text-neutral-900 data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all">Code</TabsTrigger>
                     </TabsList>
                   </Tabs>
-                  <HeaderActions user={user} projectId={project?.id} />
+                  <div className="flex items-center gap-2">
+                    <DownloadButton projectName={project?.name} />
+                    <HeaderActions user={user} projectId={project?.id} />
+                  </div>
                 </div>
 
                 {/* Content Area */}

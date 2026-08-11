@@ -13,6 +13,17 @@
           }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ./hooks/format_hook.js"
+          }
+        ]
+      }
     ]
   }
 }

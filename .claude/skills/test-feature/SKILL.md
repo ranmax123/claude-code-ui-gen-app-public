@@ -3,7 +3,9 @@ name: test-feature
 description: Test a UI feature using Puppeteer browser automation. Captures screenshots at each step, saves them as PNGs, and writes a markdown test report. Invoke with a plain-English description of the feature — e.g. /test-feature test the download to zip functionality
 ---
 
-You are running a Puppeteer-based UI feature test. Follow every step below exactly.
+Run the entire testing on an agent.
+
+Agent 1: You are running a Puppeteer-based UI feature test. Follow every step below exactly.
 
 ## Phase 0 — Derive inputs from the user's description
 
